@@ -1,0 +1,6 @@
+.cardItem {
+    color: #828282;
+    margin-top: 5px;
+    align-items: baseline;
+    display: flex;
+}

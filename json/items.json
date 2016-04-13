@@ -1,0 +1,93 @@
+[
+  {
+    "id": 1,
+    "set_name": "Unix File Commands",
+    "cards": [
+      {
+        "id": 1,
+        "front": "mkdir",
+        "back": "make directory"
+      },
+      {
+        "id": 2,
+        "front": "cd",
+        "back": "change directory"
+      },
+      {
+        "id": 3,
+        "front": "ls",
+        "back": "directory listing"
+      },
+      {
+        "id": 4,
+        "front": "ls -al",
+        "back": "formatted listing with hidden files"
+      },
+      {
+        "id": 5,
+        "front": "pwd",
+        "back": "show current working directory"
+      },
+      {
+        "id": 6,
+        "front": "rm",
+        "back": "remove file"
+      },
+      {
+        "id": 7,
+        "front": "rm -r",
+        "back": "remove directory"
+      },
+      {
+        "id": 8,
+        "front": "rm -rf",
+        "back": "force remove directory"
+      },
+      {
+        "id": 9,
+        "front": "cp",
+        "back": "copy files"
+      },
+      {
+        "id": 10,
+        "front": "cp -r",
+        "back": "copy directories"
+      },
+      {
+        "id": 11,
+        "front": "mv",
+        "back": "rename or move files"
+      },
+      {
+        "id": 12,
+        "front": "ln -s",
+        "back": "create symbolic link to file"
+      },
+      {
+        "id": 13,
+        "front": "touch",
+        "back": "create or update file"
+      },
+      {
+        "id": 14,
+        "front": "cat",
+        "back": "read file"
+      },
+      {
+        "id": 15,
+        "front": "head",
+        "back": "output the first 10 lines of file"
+      },
+      {
+        "id": 16,
+        "front": "tail",
+        "back": "output the last 10 lines of file"
+      },
+      {
+        "id": 17,
+        "front": "tail -f",
+        "back": "output the last 10 lines of file and follow updates"
+      }
+    ]
+  }
+]
