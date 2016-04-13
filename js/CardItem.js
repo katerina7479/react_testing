@@ -4,12 +4,12 @@ var React = require('react');
 var CardItem = React.createClass({
 
     getInitialState: function () {
-        return {side: "front"}
+        return {front: true}
     },
 
     getCardData: function () {
-        var side = this.state.side;
-        if (side == "front") {
+        var front = this.state.front;
+        if (front) {
             return (
                 <div className="cardItem-side">
                     {this.props.item.front}
@@ -24,10 +24,18 @@ var CardItem = React.createClass({
         }
     },
 
+    handleClick: function () {
+        this.setState({front: !this.state.front});
+    },
+
     render: function () {
         return (
             <div className="cardItem">
                 {this.getCardData()}
+
+                <div className="cardItem-toggleButton" onClick={this.handleClick}>
+                    Click to toggle.
+                </div>
             </div>
         )
     }
