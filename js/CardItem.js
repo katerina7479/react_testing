@@ -9,19 +9,19 @@ var CardItem = React.createClass({
 
     getCardData: function () {
         var front = this.state.front;
-        if (front) {
-            return (
-                <div className="cardItem-side">
-                    {this.props.item.front}
+        var side = front ? this.props.item.front : this.props.item.back;
+
+        return (
+            <div className="panel panel-default">
+                <div className="panel-heading">
+                    <h1 className="panel-title">{this.props.item.id}</h1>
                 </div>
-            )
-        } else {
-            return (
-                <div className="cardItem-side">
-                    {this.props.item.back}
+                <div className="panel panel-body">
+                    {side}
                 </div>
-            )
-        }
+            </div>
+        )
+
     },
 
     handleClick: function () {
@@ -30,12 +30,12 @@ var CardItem = React.createClass({
 
     render: function () {
         return (
-            <div className="cardItem">
+            <div className="col-sm-4 cardItem">
                 {this.getCardData()}
 
-                <div className="cardItem-toggleButton" onClick={this.handleClick}>
+                <button className="btn cardItem-toggleButton" onClick={this.handleClick}>
                     Click to toggle.
-                </div>
+                </button>
             </div>
         )
     }
